@@ -12,8 +12,7 @@ jobs:
     steps:
       - name: check cgroup
         run: |
-          ls /sys/fs/cgroup/
-          ls /sys/fs/cgroup/systemd
+          ls /sys/fs/cgroup/actions_job
       - uses: actions/checkout@v2
       - name: Build Arch Linux package
         uses: ./
